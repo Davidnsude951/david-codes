@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Figtree" ,sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.container{
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px black solid;
+    padding: 22px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 7px 7px 0 0 black;
+}
+
+.container .main-image{
+    border: none;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.container .comment{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.comment button{
+    width: 75px;
+    height: 28px;
+    color: black;
+    background: hsl(47, 88%, 63%) ;
+    border: none;
+    box-shadow: 0.5px 0.5px 1px ;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.comment p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container .header{
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.content{
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 800;
+    margin-bottom: 1px;
+    font-size: 14px;
+}
+
+.profile img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+@media(max-width:380px){
+    .container{
+        max-width: 330px;
+    }
+}
